@@ -19,7 +19,6 @@ class GrowTree extends MigrateMakeCommand
 
     public function handle()
     {
-        dd('111');
         $model = $this->input->getArgument('model');
         if (!class_exists($model) || !is_subclass_of($model, Model::class) || !method_exists($model, 'getClosureTable')) {
             $this->error('{model} must be a valid model class and use the BelongsToTree trait!');

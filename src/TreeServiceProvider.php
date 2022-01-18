@@ -11,11 +11,19 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Database\Migrations\MigrationCreator;
 
 class TreeServiceProvider extends ServiceProvider
 {
     public function register()
     {
+
+        $this->app->when(MigrationCreator::class)
+            ->needs('$customStubPath')
+            ->give(function ($app) {
+                return $app->basePath('stubs');
+            });
+        
         $this->commands([
             FixTree::class,
             GrowTree::class,
