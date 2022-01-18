@@ -2,9 +2,9 @@
 
 namespace Alba\Tree;
 
-use Alba\Tree\Console\Tree\FixTree;
-use Alba\Tree\Console\Tree\GrowTree;
-use Alba\Tree\Console\Tree\ShowTree;
+use Alba\Tree\Console\FixTree;
+use Alba\Tree\Console\GrowTree;
+use Alba\Tree\Console\ShowTree;
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;

@@ -1,5 +1,5 @@
 <?php
-namespace Alba\Tree\Console\Tree;
+namespace Alba\Tree\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;

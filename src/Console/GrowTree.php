@@ -1,6 +1,6 @@
 <?php
 
-namespace Alba\Tree\Console\Tree;
+namespace Alba\Tree\Console;
 
 use Illuminate\Database\Console\Migrations\MigrateMakeCommand;
 use Illuminate\Database\Eloquent\Model;
