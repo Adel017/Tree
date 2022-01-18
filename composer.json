@@ -22,12 +22,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Alba\\tree\\": "src/"
+      "Alba\\Tree\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Alba\\tree\\Tests\\": "tests/"
+      "Alba\\Tree\\Tests\\": "tests/"
     }
   },
   "suggest": {
