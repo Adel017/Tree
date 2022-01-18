@@ -1,0 +1,48 @@
+{
+  "name": "adeltoubal/tree",
+  "description": "closure tables.",
+  "keywords": [
+    "laravel", "eloquent", "database",
+    "attribute aliases", "attribute mapping",
+    "fuzzy dates", "dates with zeros",
+    "mutual relationship", "reciprocal relationship",
+    "sortable", "orderable",
+    "closure table", "closures", "adjacency list", "tree", "hierarchy", "nested sets"
+  ],
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "php": ">=7.3",
+    "illuminate/database": "~8.80",
+    "illuminate/support": "~8.80",
+    "illuminate/console": "~8.80"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Alba\\tree\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Alba\\tree\\Tests\\": "tests/"
+    }
+  },
+  "suggest": {
+    "rutorika/sortable": "An alternative version of the 'Orderable' behavior that inspired Smoothie's implementation."
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Alba\\tree\\ServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "sniff": "./vendor/bin/phpcs --standard=./phpcs.xml ./src",
+    "fix": "./vendor/bin/phpcbf --standard=./phpcs.xml ./src",
+    "test": "vendor/bin/phpunit --colors=always --testdox -v"
+  }
+}
