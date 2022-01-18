@@ -1,6 +1,6 @@
 <?php
 
-namespace Alba;
+namespace Alba\Tree;
 
 use Alba\Tree\Console\Tree\FixTree;
 use Alba\Tree\Console\Tree\GrowTree;
@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\ServiceProvider;
 
-class SmoothieServiceProvider extends ServiceProvider
+class TreeServiceProvider extends ServiceProvider
 {
     public function register()
     {
